@@ -5,7 +5,7 @@ The **basic sketch** configures the sensors' data rates and full scale sensitivi
 
 The ICM42688 has an embedded function engine which will be the subject of the next sketch. I plan to demonstrate wake-on-motion, tap detection, as well as use of the FIFO to capture data prior to a wake event for later analysis. I might try some of the other embedded functions just for fun.
 
-Lastly, the ICM42688 allows the 50 ppm accurate embedded PLL to be replaced by a 30 - 50 kHz clock signal. The STM32L4 is capable of outputing a 32.768 kHz square wave from the 1-ppm-accuracy RTC embedded clock. I am curious to see if any difference between using the internall ICM42688 PLL and a more accurate external CLKIN signal can be detected in gyro drift and/or heading accuracy. I will post the sketch I use and any results when obtained.
+Lastly, the ICM42688 allows the 50 ppm accurate embedded PLL to be replaced by a 30 - 50 kHz clock signal. The STM32L4 is capable of outputing a 32.768 kHz square wave from the 1-ppm-accuracy RTC embedded clock. I am curious to see if any difference between using the internal ICM42688 PLL and a more accurate external CLKIN signal can be detected in gyro drift and/or heading accuracy. I will post the sketch I use and any results when obtained.
 
 Overall, the ICM42688 is a worthy high-performance accel/gyro combo sensor that is a candidate to replace the LSM6DSM/T, its nearest competitor, in any absolute orientation estimation engine requiring the best accuracy.
 
