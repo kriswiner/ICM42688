@@ -98,8 +98,7 @@ void ICM42688::reset()
 
 uint8_t ICM42688::DRStatus()
 {
-  // reset device
-  uint8_t temp = _i2c_bus->readByte(ICM42688_ADDRESS, ICM42688_INT_STATUS); // Set bit 0 to 1 to reset ICM42688
+  uint8_t temp = _i2c_bus->readByte(ICM42688_ADDRESS, ICM42688_INT_STATUS); 
   return temp;
 }
 
