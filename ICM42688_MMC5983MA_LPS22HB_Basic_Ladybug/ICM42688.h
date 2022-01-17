@@ -52,7 +52,7 @@ https://media.digikey.com/pdf/Data%20Sheets/TDK%20PDFs/ICM-42688-P_DS_Rev1.2.pdf
 #define ICM42688_APEX_DATA5                0x36
 #define ICM42688_INT_STATUS2               0x37   
 #define ICM42688_INT_STATUS3               0x38   
-#define ICM42688_SIGNAL_PATH_RESET         0x48
+#define ICM42688_SIGNAL_PATH_RESET         0x4B
 #define ICM42688_INTF_CONFIG0              0x4C
 #define ICM42688_INTF_CONFIG1              0x4D
 #define ICM42688_PWR_MGMT0                 0x4E
