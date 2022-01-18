@@ -3,13 +3,11 @@
     Created by Kris Winer
 
   This sketch uses SDA/SCL on pins 21/20 (Ladybug default), respectively, and it uses the Ladybug STM32L432 Breakout Board.
-  The ICM42688 is a combo sensor with embedded accel and gyro, here used as 6 DoF in a 9 DoF absolute orientation solution
-  along with the MMC5983MA magnetometer and the LPS22HB barometer. This is a basic sketch that initializes the sensors,
+  The ICM42688 is a combo sensor with embedded accel and gyro, here used as 6 DoF sensor along with the LPS22HB barometer. 
+  This is a basic sketch that initializes the sensors,
   perfroms the self tests, calibrates the sensors, sets up data ready interrupts, collects the data at the user specified
-  rate and then performs Madgqick sensor fusion and outputs the scaled sensor data a long with quaternions and Euler angles.
-
-  There are still some errors in the treatment of linear acceleration but the sketch serves as a useful starting point for using
-  this sensor combination for accurate absolute orientation estimation.
+  rate. The sketch also configures two of the embedded functions, tilt detection, which required enabling the DMP, and 
+  wake-on-motion detection, which does not.
 
   Library may be used freely and without limit with proper attribution.
 
