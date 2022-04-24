@@ -9,7 +9,7 @@ The **6DoF** sketch puts the magnetometer in powerdown mode and uses a 6 DoF (ac
 
 ![CLKIN](https://user-images.githubusercontent.com/6698410/151062460-4b1d920e-f8f1-49fb-a878-d431b87e62c8.jpg)
 
-The use of the external STM32L432 32.768 kHz clock source reduces the gyro drift by more than 4x. This is a significant improvement in gyro stability (the major determinant of relative 6 DoF yaw drift) which could lead to further improvent in the more interesting 9 DoF absolute orientation estimation. More on this to come...
+The use of the external STM32L432 32.768 kHz clock source reduces the gyro drift by more than 4x to just ~6 degrees per hour. This is a significant improvement in gyro stability (the major determinant of relative 6 DoF yaw drift) which could lead to further improvent in the more interesting 9 DoF absolute orientation estimation. More on this to come...
 
 Overall, the ICM42688 is a worthy high-performance accel/gyro combo sensor that is a candidate to replace the LSM6DSM/T, its nearest competitor, in any absolute orientation estimation engine requiring the best accuracy.
 
