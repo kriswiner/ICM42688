@@ -19,4 +19,6 @@ The design for the breakout board I designed for testing the ICM42688 can be fou
 
 I am using the STM32L432KC ([Ladybug](https://www.tindie.com/products/tleracorp/ladybug-stm32l432-development-board/)) breakout board for testing the ICM42688. Ladybug available on Tindie.
 
+I designed an [CM42688 breakout board](https://oshpark.com/shared_projects/zIig3KID) with a TCXO so any MCU can get the benefit of the gyro stabilization. After initial testing I will offer these for sale at Tindie.
+
 Copyright 2022 Tlera Corporation. All rights reserved.
