@@ -167,9 +167,9 @@ void setup() {
 
    ICM42688.reset();  // software reset ICM42688 to default registers
 
-   // get sensor resolutions, only need to do this once
-   aRes = ICM42688.getAres(Ascale);
-   gRes = ICM42688.getGres(Gscale);
+   // set sensor resolutions for self test
+   aRes = 4.0f/32768.0f;
+   gRes = 250.0f/32768.0f
 
    ICM42688.selfTest(accelDiff, gyroDiff, STratio);
    Serial.println("Accel Self Test:");
@@ -195,6 +195,11 @@ void setup() {
    Serial.print("Gz ratio: "); Serial.print(STratio[6]*100.0f, 0); Serial.println(" %");
    Serial.println("Should be between 50 and 150%");
    delay(2000);
+      
+   // get sensor resolutions for user settings, only need to do this once
+   aRes = ICM42688.getAres(Ascale);
+   gRes = ICM42688.getGres(Gscale);
+
   
    ICM42688.init(Ascale, Gscale, AODR, GODR);
 
